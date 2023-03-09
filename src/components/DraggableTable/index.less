@@ -1,0 +1,57 @@
+.drag-table {
+  .hide-checkbox-transiton {
+    .ant-checkbox-checked {
+      &::after {
+        animation: none;
+      }
+
+      .ant-checkbox-inner {
+        transition: none;
+
+        &::after {
+          transition: none;
+        }
+      }
+    }
+    .ant-checkbox-inner {
+      transition: none;
+
+      &::after {
+        transition: none;
+      }
+    }
+  }
+
+  tbody {
+    &.hide-drag-transition tr {
+      transition: none;
+    }
+    tr {
+      transition: transform 0.25s ease;
+      // td {
+      //   &.avatar {
+      //     span {
+      //       display: inline-block;
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+.row-dragging {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 25px #ccc;
+  td {
+    padding: 12px 8px; //table middle size padding
+    &:first-of-type {
+      text-align: center;
+      min-width: 60px;
+    }
+    &.control {
+      text-align: left;
+      width: 45px;
+    }
+  }
+}
